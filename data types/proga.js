@@ -1,4 +1,4 @@
-let datas = ["hello", "my", "name", "is", "dima", true, false, true , true , false , 5, 6, 4, 4, 3, 6, 7, 8, 9, 9, null, null, null]  ;
+let datas = ["hello", "my", "name", "is", "dima", true, false, true , true , false , 5, 6, 4, 4, 3, 6, 7, 8, 9, 9, null, null, null, undefined ,undefined, undefined, undefined];
 
 let objDatas = {
     Number: 0,
@@ -9,34 +9,31 @@ let objDatas = {
     undefined: 0
 };
 
-for (let i = 0; i < datas.length; i++){
-
-
-
-if ( typeof (datas[i]) == "number"){
+for (let data of datas) {   
+    
+if ( typeof (data) == "number"){
     objDatas.Number++
 }
 
-if ( typeof (datas[i]) == "string"){
+if ( typeof (data) == "string"){
     objDatas.String++
 }
 
-if ( typeof (datas[i]) == "boolean"){
+if ( typeof (data) == "boolean"){
     objDatas.Boolean++
 }
 
-if ( typeof (datas[i]) == "bigint"){
+if ( typeof (data) == "bigint"){
     objDatas.Biglnt++
-}
+}   
 
-if (datas[i] == null) {
+if (data == null) {
     objDatas.NULL++
 }
 
-if ( typeof (datas[i]) == "undefined"){
+if ( typeof (data) == "undefined"){
     objDatas.undefined++
 }
-
 }
 
 console.log (objDatas);
