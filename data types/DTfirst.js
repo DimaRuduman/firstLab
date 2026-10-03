@@ -5,8 +5,7 @@ let types = [
     { type: "number", number: 0 },
     { type: "boolean", number: 0 },
     { type: "null", number: 0 },
-    { type: "undefined", number: 0 }
-];
+    { type: "undefined", number: 0 }];
 
 for (let item of datas) {
 
